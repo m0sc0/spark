@@ -4,9 +4,18 @@ It replicate the data on 3 DataNodes
 DataNode directories  
 
 Commands:
+Remove trash  
 ```
 hdfs dfs -du -h <path>
 hdfs dfs -rm -skipTrash <path>
+```
+Restoring all up  
+```
+hdfs dfsadmin -report
+systemctl status ambari-agent
+If is all down on ambari:  
+1) Start HDF
+2) If there is not active NameNode, run the following command from NameNode1 server ONLY IT IS REQUIRED (run it on sparkmaster): sudo -u hdfs hdfs haadmin  -ns nameservice1 -transitionToActive --forceactive nn1 --forcemanual  
 ```
 
 ## YARN (Yet Another Resource Negotiator)
@@ -16,13 +25,9 @@ UI: Here we see the running jobs
 
 ### YARN UI
 ![YARN UI](https://github.com/m0sc0/spark/blob/main/yarn%20ui.jpg)
+
 ## AMBARI
 To manage all the modules  
+![AMBARI_UI](https://learn.microsoft.com/en-us/azure/hdinsight/media/hdinsight-changing-configs-via-ambari/apache-ambari-dashboard.png)
 
-```
-hdfs dfsadmin -report
-systemctl status ambari-agent
-If is all down on ambari:  
-1) Start HDF
-2) If there is not active NameNode, run the following command from NameNode1 server ONLY IT IS REQUIRED (run it on sparkmaster): sudo -u hdfs hdfs haadmin  -ns nameservice1 -transitionToActive --forceactive nn1 --forcemanual  
-```
+
