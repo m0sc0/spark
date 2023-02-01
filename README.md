@@ -14,6 +14,9 @@ YARN enables multiple data access applications to process it.
 Resource Manager keeps the meta info about which jobs are running on which Node Manage and how much memory and CPU is consumed and hence has a holistic view of total CPU and RAM consumption of the whole cluster.  
 UI: Here we see the running jobs  
 
+### YARN UI
+[<img alt="alt_text" width="40px" src="yarn ui.JPG" />]
+
 ## AMBARI
 To manage all the modules  
 
