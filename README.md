@@ -15,7 +15,7 @@ Resource Manager keeps the meta info about which jobs are running on which Node 
 UI: Here we see the running jobs  
 
 ### YARN UI
-[<img alt="alt_text" width="40px" src="yarn ui.JPG" />]
+[[<img alt="alt_text" width="40px" src="[yarn ui.JPG](https://github.com/m0sc0/spark/blob/main/yarn%20ui.jpg)" />]](https://github.com/m0sc0/spark/blob/main/yarn%20ui.jpg)
 
 ## AMBARI
 To manage all the modules  
