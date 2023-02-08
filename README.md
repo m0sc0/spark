@@ -33,10 +33,9 @@ Active
 ```
 
 ## HUE WAREHOUSE:
-```
-Once data is processed,  goes to warehouse directory and the files are parquet, files can not visualize clicking, but with impala tables we can see it.
-Unprocessed data must be in hdfs/raw and then it will be moved to warehouse.
-```
+Once data is processed,  goes to warehouse directory and the files are parquet, files can not visualize  clicking, but with impala tables we can see it.  
+Unprocessed data must be in hdfs/raw and then it will be moved to warehouse.  
+
 
 ## YARN (Yet Another Resource Negotiator)
 YARN enables multiple data access applications to process it.  
